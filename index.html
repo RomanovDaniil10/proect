@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киберщит: Твоя цифровая крепость</title>
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --secondary: #0055ff;
+            --dark: #0a0b10;
+            --card-bg: #161b22;
+            --text: #e6edf3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--dark));
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #30363d;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h3::before {
+            content: '🛡️';
+            font-size: 1.2rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: -20px;
+            color: var(--primary);
+        }
+
+        .important {
+            background: rgba(0, 212, 255, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>КиберБезопасность 2026</h1>
+    <p class="subtitle">Памятка по выживанию в цифровом мире для 10-х классов</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h3>Психология (Анти-фишинг)</h3>
+            <ul>
+                <li><strong>Правило 5 секунд:</strong> Не кликай сразу. Проверь адрес отправителя.</li>
+                <li><strong>Верификация:</strong> Если друг просит денег — перезвони ему лично.</li>
+                <li><strong>Нет халяве:</strong> Скины, призы и выплаты в сети — это 100% ловушки.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Аккаунты и Доступ</h3>
+            <ul>
+                <li><strong>2FA:</strong> Включи двухфакторную аутентификацию во всех соцсетях.</li>
+                <li><strong>Менеджеры паролей:</strong> Не используй один пароль дважды.</li>
+                <li><strong>Сложность:</strong> Пароль должен быть длиннее 12 символов.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Устройства и Сеть</h3>
+            <ul>
+                <li><strong>Обновления:</strong> Всегда устанавливай патчи безопасности системы.</li>
+                <li><strong>Пиратство:</strong> Откажись от "кряков" — в них живут вирусы-стиллеры.</li>
+                <li><strong>Публичный Wi-Fi:</strong> Не заходи в банк через открытые сети без VPN.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>План спасения (Бэкап)</h3>
+            <ul>
+                <li><strong>Правило 3-2-1:</strong> 3 копии, на 2 разных носителях, 1 в облаке.</li>
+                <li><strong>Цифровой след:</strong> Закрой профили и не пости личные документы.</li>
+                <li><strong>Действие при взломе:</strong> Сразу смени пароли и заверши все сеансы.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="important">
+        <strong>Помни:</strong> Безопасность — это не программа, которую можно купить, а твоя ежедневная привычка и критическое мышление.
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Проект по Кибербезопасности | 10 "А" класс
+</footer>
+
+</body>
+</html>
+</html>
